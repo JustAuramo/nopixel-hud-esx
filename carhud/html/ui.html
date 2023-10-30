@@ -1,0 +1,94 @@
+<head>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="scripts.js" type="text/javascript"></script>
+    <script src="debounce.min.js" type="text/javascript"></script>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <div id="root">
+        <div id="main-app-container" style="display: block;">
+           <div class=" jss1 jss101 ">
+              <div class="jss102 jss131">
+                 <div class="jss110 jss139">
+                    <div class="jss113 jss142">
+                       <div class="jss118 jss147">
+                          <div class="jss119 jss148">
+                             <div class="jss114 jss680">
+                                <div class="jss115 jss681">
+                                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="height: 62px; width: 62px; transform: rotate(120deg);">
+                                      <circle r="27" cx="31" cy="31" fill="transparent" stroke="#9E9E9E" stroke-width="6" stroke-dasharray="169.64600329384882" stroke-dashoffset="56.54866776461626" style="transition: stroke-dashoffset 600ms linear 0s; will-change: transition;"></circle>
+                                   </svg>
+                                </div>
+                                <div class="jss115 jss681">
+                                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="height: 62px; width: 62px; transform: rotate(120deg);">
+                                      <circle r="27" cx="31" cy="31" fill="transparent" stroke="white" stroke-width="6" stroke-dasharray="169.64600329384882" id="hizbar" stroke-dashoffset="70.64600329384882" style="transition: stroke-dashoffset 600ms linear 0s; will-change: transition;"></circle>
+                                   </svg>
+                                </div>
+                                <div class="jss116 jss682" style="margin-top: -6px;">
+                                   <p class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextPrimary" style="word-break: break-word;" id="speedhiz">20</p>
+                                </div>
+                                <div class="jss117 jss683" style="margin-top: -12px;">
+                                   <p class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextPrimary" style="word-break: break-word;" id="mph">kmh</p>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="jss120 jss149">
+                             <div class="jss114 jss709">
+                                <div class="jss115 jss710">
+                                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="height: 32px; width: 32px; transform: rotate(150deg);">
+                                      <circle r="13.5" cx="16" cy="16" fill="transparent" stroke="#9E9E9E" stroke-width="3" stroke-dasharray="84.82300164692441" stroke-dashoffset="28.27433388230813" style="transition: stroke-dashoffset 600ms linear 0s; will-change: transition;"></circle>
+                                   </svg>
+                                </div>
+                                <div class="jss115 jss710">
+                                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="height: 32px; width: 32px; transform: rotate(150deg);">
+                                      <circle r="13.5" cx="16" cy="16" fill="transparent" stroke="white" stroke-width="3" stroke-dasharray="84.82300164692441" id="benzin" stroke-dashoffset="85" style="transition: stroke-dashoffset 600ms linear 0s; will-change: transition;"></circle>
+                                   </svg>
+                                </div>
+                                <div class="jss116 jss711" style="margin-top: 0px;">
+                                   <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="gas-pump" class="svg-inline--fa fa-gas-pump fa-w-16 fa-fw fa-2x " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                      <path fill="currentColor" d="M336 448H16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h320c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm157.2-340.7l-81-81c-6.2-6.2-16.4-6.2-22.6 0l-11.3 11.3c-6.2 6.2-6.2 16.4 0 22.6L416 97.9V160c0 28.1 20.9 51.3 48 55.2V376c0 13.2-10.8 24-24 24s-24-10.8-24-24v-32c0-48.6-39.4-88-88-88h-8V64c0-35.3-28.7-64-64-64H96C60.7 0 32 28.7 32 64v352h288V304h8c22.1 0 40 17.9 40 40v27.8c0 37.7 27 72 64.5 75.9 43 4.3 79.5-29.5 79.5-71.7V152.6c0-17-6.8-33.3-18.8-45.3zM256 192H96V64h160v128z"></path>
+                                   </svg>
+                                </div>
+                                <div class="jss117 jss712" style="margin-top: 0px;">
+                                   <p class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextPrimary" style="word-break: break-word;"></p>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="jss114 jss738" id="yukseklikbar" style="display:none;">
+                          <div class="jss115 jss739">
+                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="height: 62px; width: 62px; transform: rotate(150deg);">
+                                <circle r="27" cx="31" cy="31" fill="transparent" stroke="#9E9E9E" stroke-width="6" stroke-dasharray="169.64600329384882" stroke-dashoffset="56.54866776461626" style="transition: stroke-dashoffset 600ms linear 0s; will-change: transition;"></circle>
+                             </svg>
+                          </div>
+                          <div class="jss115 jss739">
+                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="height: 62px; width: 62px; transform: rotate(150deg);">
+                                <circle r="27" cx="31" cy="31" fill="transparent" stroke="white" stroke-width="6" stroke-dasharray="169.64600329384882" id="yukseklikzibab" stroke-dashoffset="168.11918926420418" style="transition: stroke-dashoffset 600ms linear 0s; will-change: transition;"></circle>
+                             </svg>
+                          </div>
+                          <div class="jss116 jss740" style="margin-top: 0px;">
+                             <p class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextPrimary" style="word-break: break-word;" id="yukseklik">27</p>
+                          </div>
+                          <div class="jss117 jss741" style="margin-top: 0px;">
+                             <p class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextPrimary" style="word-break: break-word;">alt</p>
+                          </div>
+                       </div>
+                       <div class="jss121 jss150">
+                          <svg aria-hidden="true" id="kemer" focusable="false" data-prefix="fas" data-icon="user-slash" class="svg-inline--fa fa-user-slash fa-w-20 fa-fw fa-lg " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" style="color: rgb(216, 67, 21);">
+                             <path fill="currentColor" d="M633.8 458.1L362.3 248.3C412.1 230.7 448 183.8 448 128 448 57.3 390.7 0 320 0c-67.1 0-121.5 51.8-126.9 117.4L45.5 3.4C38.5-2 28.5-.8 23 6.2L3.4 31.4c-5.4 7-4.2 17 2.8 22.4l588.4 454.7c7 5.4 17 4.2 22.5-2.8l19.6-25.3c5.4-6.8 4.1-16.9-2.9-22.3zM96 422.4V464c0 26.5 21.5 48 48 48h350.2L207.4 290.3C144.2 301.3 96 356 96 422.4z"></path>
+                          </svg>
+                          &nbsp;
+                          &nbsp;
+                          <svg aria-hidden="true" id="motordurum" focusable="false" data-prefix="fas" data-icon="oil-can" class="svg-inline--fa fa-oil-can fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" style="color: rgb(216, 67, 21);"><path fill="currentColor" d="M629.8 160.31L416 224l-50.49-25.24a64.07 64.07 0 0 0-28.62-6.76H280v-48h56c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h56v48h-56L37.72 166.86a31.9 31.9 0 0 0-5.79-.53C14.67 166.33 0 180.36 0 198.34v94.95c0 15.46 11.06 28.72 26.28 31.48L96 337.46V384c0 17.67 14.33 32 32 32h274.63c8.55 0 16.75-3.42 22.76-9.51l212.26-214.75c1.5-1.5 2.34-3.54 2.34-5.66V168c.01-5.31-5.08-9.15-10.19-7.69zM96 288.67l-48-8.73v-62.43l48 8.73v62.43zm453.33 84.66c0 23.56 19.1 42.67 42.67 42.67s42.67-19.1 42.67-42.67S592 288 592 288s-42.67 61.77-42.67 85.33z"></path></svg>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+</body>
